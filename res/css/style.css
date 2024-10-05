@@ -1,6 +1,6 @@
 body {
     font-family: monospace;
-    background-color: #f0f0f0;
+    background-color: whitesmoke;
     margin: 0;
     padding: 0;
 }
@@ -9,39 +9,99 @@ header .navbar {
     background-color: gray;
     padding: 5px;
     display: flex;
+    justify-content: flex-start; 
     align-items: center;
-    border-radius: 5px;
-    margin: 5px;
 }
-
+ /* descendant selector */ 
 .navbar .nav-link {
     text-decoration: none;
-    color: #333;
-    margin: 0 30px;
+    color: lightgray;
+    margin-right: 30px;
+    margin-left: 30px;
     padding: 10px;
     border-radius: 15px;
 }
 
-.navbar img.profile-pic {
+/* pseudo class */ 
+.navbar .nav-link:hover {
+    background-color: lightblue;
+}
+
+.navbar .nav-link:last-child {
+    margin-right: 0;
+}
+
+/* id selector */
+#profile-img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+}
+
+/* class selector */
+.profile-link {
     margin-left: auto;
 }
 
-.navbar .nav-link:hover {
-    background-color: #4267b2;
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
 }
 
 .post {
-    width: 300px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
     border-radius: 10px;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.post-header .user-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.post-header .post-date {
+    color: #888;
+}
+
+/* child selector */ 
+.post-body > img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
     position: relative;
-    margin: 10px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* adjacent sibling selector */
+.post + .post {
+    margin-top: 30px;
+}
+
+/* general sibling selector */
+#post1 ~ #post2 {
+    background-color: #f8f8f8;
 }
 
 .addPost-wrapper {
@@ -162,6 +222,8 @@ label ~ input {
     .login-container {
         width: 90%;
     }
+
+
 }
 
 @media (min-width: 601px) {
