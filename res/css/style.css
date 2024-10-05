@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
@@ -71,25 +71,101 @@ header .navbar {
     resize: none;
 }
 
-.greybutton {
-    color: white;
-    background-color: gray;
+.addPost button {
     border: none;
+    color: white;
     padding: 4px 12px;
+}
+
+.greybutton {
+    background-color: gray;
 }
 
 .bluebutton {
     margin-top: 30px;
-    color: white;
     background-color: rgba(31, 63, 160, 0.7);
+}
+
+.addPost button:hover {
+    background-color: #333;
+}
+
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 40px;
+}
+
+.login-container {
+    padding: 10px 0;
+    background-color: #D8D8D8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-label {
+    display: block;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+}
+
+#login-btn {
+    appearance: none;
+    background-color: #1F477D;
+    color: white;
     border: none;
-    padding: 4px 12px;
+    padding: 6px 12px;
+    font-family: inherit;
 }
 
-.bluebutton:hover {
-    background-color: #333;
+.submit-btn:hover {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
 }
 
-.greybutton:hover {
-    background-color: #333;
+.login-container p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.login-container a {
+    text-decoration: none;
+    color: #2AB7EC;
+}
+
+.login-container label {
+    display: none;
+}
+
+.form-label + input {
+    border: 0 solid #ddd;
+    max-width: 150px;
+}
+label ~ input {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 601px) {
+    .login-container {
+        width: 300px;
+    }
 }

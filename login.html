@@ -15,12 +15,31 @@
             <a href="index.html" class="nav-link">Home</a>
             |
             <a href="addPost.html" class="nav-link">Add Post</a>
-            <img class="profile-pic" src="res/images/Default_pfp.png">
+            <a href="login.html" class="profile-link">
+                <img class="profile-pic" src="res/images/Default_pfp.png" alt="Profile picture" id="profile-img">
+            </a>
         </div>
     </header>
 
-    <main>
-        
+    <main class="login-wrapper">
+        <div class="login-container">
+            <form action="index.html" id="login-form" class="form">
+                <h2>Welcome to PostIt</h2>
+                <p>
+                    <a href="#">Create an account</a>
+                </p>
+                <p>or</p>
+                <p>Please log in</p>
+                <label for="email" class="form-label" aria-hidden="true">Email</label>
+                <input type="email" id="email" class="input-field" placeholder="Email" required>
+                <label for="password" class="form-label" aria-hidden="true">Password</label>
+                <input type="password" id="password" class="input-field" placeholder="Password" required>
+                <button type="submit" class="submit-btn" id="login-btn">Log in</button>
+                <p>
+                    <a href="#">Forgot password?</a>
+                </p>
+            </form>
+        </div>
     </main>
 
     <footer>
