@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="res/images/favicon.ico">
     <link rel="stylesheet" href="res/css/style.css">
     <title>Add Post</title>
 </head>
@@ -13,14 +12,34 @@
     <header>
         <div class="navbar">
             <a href="index.html" class="nav-link">Home</a>
-            |
-            <a href="addPost.html" class="nav-link">Add Post</a>
             <img class="profile-pic" src="res/images/Default_pfp.png">
         </div>
     </header>
 
-    <main>
-
+    <main class="addPost-wrapper">
+        <div class="addPost">
+            <table>
+                <tr>
+                    <td>
+                        <p>Post body</p>
+                    </td>
+                    <td>
+                        <textarea placeholder="textarea" rows="5" cols="20" id="addArea"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Select file</p>
+                    </td>
+                    <td>
+                        <button type="button" class="greybutton">Choose File</button>
+                    </td>
+                </tr>
+            </table>
+            <a href="index.html">
+                <button type="button" class="bluebutton">Create post</button> 
+            </a>
+        </div>
     </main>
 
     <footer>
