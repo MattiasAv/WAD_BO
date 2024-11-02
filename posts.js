@@ -19,7 +19,7 @@ fetch('https://api.jsonbin.io/v3/b/67266e1ae41b4d34e44d2cde', {
 
       const userIcon = document.createElement('img');
       userIcon.classList.add('user-icon');
-      userIcon.src = 'res/images/Default_pfp.png';
+      userIcon.src = post.pfp_url;
       userIcon.alt = 'User Icon';
 
       const postDate = document.createElement('span');
@@ -34,14 +34,17 @@ fetch('https://api.jsonbin.io/v3/b/67266e1ae41b4d34e44d2cde', {
 
       const postImage = document.createElement('img');
       postImage.classList.add('post-image');
-      postImage.src = post.photo_url; 
+      if (post.photo_url != "null"){
+        postImage.src = post.photo_url; 
+        postBody.appendChild(postImage);
+      }
 
       const postText = document.createElement('p');
       postText.classList.add('post-text');
-      postText.textContent = post.content; 
-
-      postBody.appendChild(postImage);
-      postBody.appendChild(postText);
+      if (post.content != "null"){
+        postText.textContent = post.content; 
+        postBody.appendChild(postText);
+      }
 
       const likeButton = document.createElement('div');
       likeButton.classList.add('like-button');
