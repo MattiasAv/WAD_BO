@@ -1,0 +1,72 @@
+[
+  {
+    "post_id": 1,
+    "create_time": "2024-11-01T14:30:00Z",
+    "author_name": "John",
+    "content": "Tartu 2024",
+    "photo_url": "https://mattiasav.github.io/WAD_BO/res/images/tartu2024.jpg"
+  },
+  {
+    "post_id": 2,
+    "create_time": "2024-11-01T15:00:00Z",
+    "author_name": "Bob",
+    "content": "Anyone knows in which room is the lab today?",
+    "photo_url": "NULL"
+  },
+  {
+    "post_id": 3,
+    "create_time": "2024-11-01T16:45:00Z",
+    "author_name": "Frank",
+    "content": "Im so hyped about the lab on Monday!!!!",
+    "photo_url": "NULL"
+  },
+  {
+    "post_id": 4,
+    "create_time": "2024-11-01T17:20:00Z",
+    "author_name": "Alice",
+    "content": "What do I even post on here?",
+    "photo_url": "NULL"
+  },
+  {
+    "post_id": 5,
+    "create_time": "2024-11-01T18:10:00Z",
+    "author_name": "Tyrone",
+    "content": "Feeling cute, might delete later",
+    "photo_url": "https://mattiasav.github.io/WAD_BO/res/images/new_selfie.jpg"
+  },
+  {
+    "post_id": 6,
+    "create_time": "2024-11-01T18:45:00Z",
+    "author_name": "Anna",
+    "content": "Look at this cool picture I took today.",
+    "photo_url": "https://mattiasav.github.io/WAD_BO/res/images/nature.png"
+  },
+  {
+    "post_id": 7,
+    "create_time": "2024-11-01T19:05:00Z",
+    "author_name": "George",
+    "content": "About to hit the gym tonight, gotta get those gains!",
+    "photo_url": "NULL"
+  },
+  {
+    "post_id": 8,
+    "create_time": "2024-11-01T19:30:00Z",
+    "author_name": "Hannah",
+    "content": "Enjoying the weekend #chill",
+    "photo_url": "NULL"
+  },
+  {
+    "post_id": 9,
+    "create_time": "2024-11-01T20:10:00Z",
+    "author_name": "Isaac",
+    "content": "I can’t believe they created a game about me.",
+    "photo_url": "NULL"
+  },
+  {
+    "post_id": 10,
+    "create_time": "2024-11-01T20:45:00Z",
+    "author_name": "Jade",
+    "content": "whered his ears go :(",
+    "photo_url": "https://mattiasav.github.io/WAD_BO/res/images/cat.jpg"
+  }
+]
