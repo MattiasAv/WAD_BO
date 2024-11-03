@@ -14,9 +14,16 @@
             <a href="index.html" class="nav-link">Home</a>
             |
             <a href="addPost.html" class="nav-link">Add Post</a>
-            <a href="login.html" class="profile-link">
-                <img class="profile-pic" src="res/images/Default_pfp.png" alt="Profile picture" id="profile-img"> 
+            <a class="profile-link">
+                <img class="profile-pic" src="res/images/Default_pfp.png" alt="Profile picture" id="profile-img" onclick="dropdownClicked()"> 
             </a>
+            <div class="dropdown">
+                <div class="dropdown_content">
+                  <p>John Doe</p>
+                  <p>john.doe@ut.ee</p>
+                  <a href="#">Logout</a>
+                </div>
+              </div> 
         </div>
     </header>
 
@@ -45,6 +52,7 @@
             </a>
         </div>
     </main>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
