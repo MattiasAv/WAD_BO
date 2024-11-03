@@ -1,5 +1,5 @@
 // fetch('https://api.jsonbin.io/v3/b/67266e1ae41b4d34e44d2cde', {
-fetch('/res/json/posts.json', {
+fetch('WAD_BO/res/json/posts.json', {
   method: 'GET',
   headers: {
     'X-Access-Key': '$2a$10$zxC.9wbsVm/7i.r6SoSpZuU18QrnJA0GO5JBDK97qtohy.0xbrwqG',
