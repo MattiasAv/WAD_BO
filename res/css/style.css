@@ -24,7 +24,7 @@ header .navbar {
 
 /* pseudo class */ 
 .navbar .nav-link:hover {
-    background-color: lightblue;
+    background-color: rgb(6, 17, 20);
 }
 
 .navbar .nav-link:last-child {
