@@ -1,4 +1,5 @@
-fetch('https://api.jsonbin.io/v3/b/67266e1ae41b4d34e44d2cde', {
+// fetch('https://api.jsonbin.io/v3/b/67266e1ae41b4d34e44d2cde', {
+fetch('/res/json/posts.json', {
   method: 'GET',
   headers: {
     'X-Access-Key': '$2a$10$zxC.9wbsVm/7i.r6SoSpZuU18QrnJA0GO5JBDK97qtohy.0xbrwqG',
@@ -7,8 +8,10 @@ fetch('https://api.jsonbin.io/v3/b/67266e1ae41b4d34e44d2cde', {
 })
   .then(response => response.json())
   .then(data => {
+    
     const postsContainer = document.getElementById('posts-container');
-    data.record.forEach(post => {
+    data.forEach(post => {
+  // use data.record.forEach when using jsonbin
       
       const postDiv = document.createElement('div');
       postDiv.classList.add('post');
@@ -26,8 +29,16 @@ fetch('https://api.jsonbin.io/v3/b/67266e1ae41b4d34e44d2cde', {
       postDate.classList.add('post-date');
       postDate.textContent = new Date(post.create_time).toLocaleDateString(); 
 
+      const postAuthor = document.createElement('p')
+      postAuthor.textContent = post.author_name
+      
+      const postAuthorAndDateDiv = document.createElement('div')
+      postAuthorAndDateDiv.appendChild(postAuthor)
+      postAuthorAndDateDiv.appendChild(postDate)
+
+
       postHeader.appendChild(userIcon);
-      postHeader.appendChild(postDate);
+      postHeader.appendChild(postAuthorAndDateDiv);
 
       const postBody = document.createElement('div');
       postBody.classList.add('post-body');
